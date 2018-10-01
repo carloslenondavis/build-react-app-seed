@@ -4,7 +4,9 @@
   "description": "buld webpack config for react app from scratch",
   "main": "index.js",
   "scripts": {
+    "start": "cross-env NODE_ENV=development webpack-dev-server --progress",
     "test": "echo \"Error: no test specified\" && exit 1"
+
   },
   "keywords": [
     "reactapp",
@@ -13,7 +15,23 @@
   "author": "clenondavis <code@carloslenon.com>",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "cross-env": "^5.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "path": "^0.12.7",
     "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.2"
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
+  },
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  },
+  "engine": {
+    "node": ">=10.10.0",
+    "npm": ">=6.4.1"
   }
 }
