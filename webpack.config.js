@@ -28,18 +28,20 @@ module.exports = {
         new webpack.ProgressPlugin(),
         new HtmlWebpackPlugin({
             template: 'public/index.html'
-        })
+        }),
+        new webpack.HotModuleReplacementPlugin()
     ],
     devServer: {
         contentBase: path.join(__dirname, 'public'),
         compress: true,
         hot: true,
-        open: true,
-        port: 7000,
+        host: 'localhost',
+        open: true,        
         overlay: {
             warnings: true,
             errors: true
         },
+        port: 7000,
         stats: 'errors-only'
     }
 }
