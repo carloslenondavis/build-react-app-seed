@@ -5,3 +5,4 @@ package-lock.json
 #prod
 /docs
 /build
+server.js

@@ -1,7 +1,3 @@
-const path = require('path');
-const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-
 module.exports = {
     mode: 'development',    
     output: {
@@ -12,7 +8,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.scss$/,
+                test: /\.(css|scss)$/,
                 use: [
                     'style-loader',
                     'css-loader',
