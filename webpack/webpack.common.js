@@ -23,8 +23,12 @@ module.exports = {
         extensions: ['*', '.js', '.css', '.scss'],
         alias: {
             Presentational: path.resolve(__dirname, './../src/components/presentational/'),
-            Containers: path.resolve(__dirname, './../src/components/containers/'),
+            Containers: path.resolve(__dirname, './../src/components/containers/'),            
+            Services: path.resolve(__dirname, './../src/services/'),
             Styles: path.resolve(__dirname, './../src/common/styles/'),
+            Actions: path.resolve(__dirname, './../src/common/actions/'),
+            Store: path.resolve(__dirname, './../src/common/store/'),
+            Reducers: path.resolve(__dirname, './../src/common/reducers/'),
         },
     },    
     plugins: [
