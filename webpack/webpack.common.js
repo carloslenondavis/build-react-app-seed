@@ -15,7 +15,16 @@ module.exports = {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: 'babel-loader',                
-            },
+            },            
+            {
+                test: /\.(js|jsx)$/,
+                include: /src/,                
+                loaders: 'eslint-loader',                
+                options: {
+                    // eslint options (if necessary)
+                    fix: true          
+                }
+            },            
         ]
     },
     resolve: {

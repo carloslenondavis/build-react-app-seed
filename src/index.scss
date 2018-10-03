@@ -1,8 +1,8 @@
 $style-location: './common/styles' !default;
 
-@import 'Styles/variables.scss';
-@import 'Styles/mixins.scss';
-@import 'Styles/avatar.scss';
+@import './common/styles/variables.scss';
+@import './common/styles/mixins.scss';
+@import './common/styles/avatar.scss';
 
 body {
   margin: 0;
