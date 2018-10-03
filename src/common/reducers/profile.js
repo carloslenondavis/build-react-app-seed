@@ -4,7 +4,7 @@
  * @type {ReduxReducer}
  * @return {Object} Reducer Specification
 */
-import { ProfileAct } from 'Actions';
+import { ProfileAct } from './../actions';
 
 const initialState = {    
     showProfileInfo: false,

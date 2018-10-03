@@ -1,0 +1,20 @@
+{
+    "bail": true,
+    "verbose": true,
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+        "src/components/**",
+        "!node_modules/**",
+        "!test/**",
+        "!src/index.js"
+    ],
+    "testEnvironment": "node",
+    "coverageThreshold": {
+        "global": {
+            "branches": 100,
+            "functions": 100,
+            "lines": 100,
+            "statements": 100
+        }
+    }
+}

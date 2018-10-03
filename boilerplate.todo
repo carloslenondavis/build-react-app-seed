@@ -1,7 +1,7 @@
  List of Enhancement:
  ✔ Implement uglyfi and compressing @critical @done(18-10-03 09:17)
  ✔ Implement redux @high @started(18-10-03 09:18) @done(18-10-03 11:04) @lasted(1h46m15s)
- ☐ Implement jest @critical
+ ☐ Implement jest @critical @started(18-10-03 14:02)
  ☐ Implement jsdoc @critical
  ☐ Implement eslinter @high
  ☐ Implement npm publish configuration for components @high

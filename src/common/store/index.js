@@ -7,7 +7,7 @@
  * @return {Object} List of store reducers
  */
 import { createStore, applyMiddleware } from 'redux';
-import appReducers from 'Reducers';
+import appReducers from './../reducers';
 import thunk from 'redux-thunk';
 
 const store = createStore(

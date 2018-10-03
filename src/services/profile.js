@@ -6,7 +6,7 @@
  * @author @clenondavis <dev@carloslenon.com>
  */
 
- import { ProfileAct } from 'Actions';
+ import { ProfileAct } from './../common/actions';
 
  /**
    * @function

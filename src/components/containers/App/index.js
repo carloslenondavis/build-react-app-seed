@@ -5,8 +5,8 @@ import PropTypes from 'prop-types';
 import { hot } from 'react-hot-loader';
 // #endregion
 // #region load components
-import Avatar from 'Presentational/Avatar';
-import { getInfo } from './../../services/profile';
+import Avatar from './../../presentational/Avatar';
+import { getInfo } from './../../../services/profile';
 // #endregion
 
 /**
