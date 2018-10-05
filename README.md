@@ -39,8 +39,13 @@ This include jsDoc as main code documentator environment.
 
 ## Developed with
 
-* [Reactjs](https://reactjs.org/docs/getting-started.html)
+* [Reactjs](https://reactjs.org/docs/getting-started.html) main lib core
 * [babel](https://babeljs.io/) - Transpiler ES5/Es6
+* [redux](https://redux.js.org/) - State flow flux implementation
+* [webpack](https://webpack.js.org/) - Bundler
+* [jest](hhttps://jestjs.io/docs/es-ES/getting-started) - Testing tool
+* [jsdoc](http://usejsdoc.org/) - Code documentation context
+* [airbnb-eslinter](https://www.npmjs.com/package/eslint-config-airbnb) - Code rules practice watcher
 
 
 ## Contributtors
@@ -57,8 +62,15 @@ Your contribution are important. If you want to become and colaborator just foll
 * get in contact with [clenondavis](https://github.com/clenondavis)
 
 You can be a colaborator for other community like Nicaragua community [JsNi](https://github.com/js-ni)
-* get in touch with [Paulo McNally](https://github.com/paulomcnally) ó [Hosmel Quintana](https://github.com/hosmelq), so they can add you as a member
+* get in touch with me
 
+## Changes Coming Soon
+
+This boilerplate will include:
+* Implementation of npm publish configuration
+* Redux log monitor for store
+* Code spliting practice implementation
+* CLI for multiple stack choice implementation
 
 ## Authors
 
