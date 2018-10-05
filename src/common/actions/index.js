@@ -6,7 +6,10 @@
  * @author @clenondavis <dev@carloslenon.com>
  * @return {Object} List of actions
  */
-import * as ProfileAct from './profile';
+import * as profileAct from './profile';
+import * as fooAct from './foo';
+
 export {
-    ProfileAct
+    profileAct,
+    fooAct
 };

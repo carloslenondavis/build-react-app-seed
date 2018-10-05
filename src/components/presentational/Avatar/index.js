@@ -47,8 +47,8 @@ Avatar.propTypes = {
     photoUrl: PropTypes.string.isRequired,
     profEmail: PropTypes.string.isRequired,
     codeEmail: PropTypes.string.isRequired,
-    showInfo: PropTypes.bool,
-    info: PropTypes.string
+    showInfo: PropTypes.bool.isRequired,
+    info: PropTypes.string.isRequired
 };
 
 export default Avatar;

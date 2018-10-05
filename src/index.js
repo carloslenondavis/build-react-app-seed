@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 // #endregion
 // #region load components
 import App from './components/containers/App';
-import * as store from './common/store';
+import store from './common/store';
 // #endregion
 // #region load styles
 import './index.scss';

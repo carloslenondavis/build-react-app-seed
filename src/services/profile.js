@@ -6,7 +6,7 @@
  * @author @clenondavis <dev@carloslenon.com>
  */
 
- import { ProfileAct } from './../common/actions';
+ import { profileAct } from './../common/actions';
 
  /**
    * @function
@@ -18,6 +18,17 @@
  export const getInfo = () => {
      return dispatch => {
          const infoText = 'Senior Frontend Developer, passionate entrepreneur, former and Javascript lover.';
-         dispatch(ProfileAct.showProfileInfo(true, infoText));
+         dispatch(profileAct.showProfileInfo(true, infoText));
      }
+ }
+ 
+ /**
+   * @function
+   * @name foo
+   * @memberof profileSvc
+   * @description foo function as testing
+   * @return {OBJECT} Store context
+   */
+ export const foo = () => {
+    return;
  }

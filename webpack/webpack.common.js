@@ -3,7 +3,6 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const envIsProd = process.env.NODE_ENV === 'production' && true;
-console.log('diurname', __dirname);
 
 module.exports = {    
     entry: {
@@ -45,7 +44,7 @@ module.exports = {
         host: 'localhost',
         open: !envIsProd,
         overlay: {
-            warnings: true,
+            warnings: false,
             errors: true
         },
         port: 7000,

@@ -14,13 +14,13 @@ export const SHOW_PROFILE_INFO = 'SHOW_PROFILE_INFO';
    * @name showProfileInfo
    * @memberof module:common/actions
    * @description show profile info
-   * @param {Boolean} showProfileInfo   - show profile info
+   * @param {Boolean} showInfo   - show profile info
    * @param {String} info   - profile info
    * @return {OBJECT} Action context
    */
-export const showProfileInfo = (showProfileInfo, info) => ({ 
+export const showProfileInfo = (showInfo, info) => ({ 
     type: SHOW_PROFILE_INFO,    
-    showProfileInfo,
+    showInfo,
     info
 });
 // #endregion

@@ -10,7 +10,7 @@ import { createStore, applyMiddleware } from 'redux';
 import appReducers from './../reducers';
 import thunk from 'redux-thunk';
 
-export const store = createStore(
+const store = createStore(
     appReducers,
     applyMiddleware(thunk)
 );
@@ -18,3 +18,5 @@ export const store = createStore(
 store.subscribe(() => {
     console.log("next state", store.getState());
 });
+
+export default store;

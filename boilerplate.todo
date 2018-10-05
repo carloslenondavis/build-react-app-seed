@@ -3,7 +3,9 @@
  ✔ Implement redux @high @started(18-10-03 09:18) @done(18-10-03 11:04) @lasted(1h46m15s)
  ✔ Implement jest @critical @started(18-10-03 14:02) @done(18-10-03 14:43) @lasted(41m57s)
  ✔ Implement jsdoc @critical @started(18-10-03 14:44) @done(18-10-03 15:31) @lasted(47m55s)
- ☐ Implement eslinter @high @started(18-10-03 15:34)
+ ✔ Implement eslinter @high @started(18-10-03 15:34) @done(18-10-03 17:13) @lasted(1h39m37s)
+ ✔ Fix eslinter error message @critical @started(18-10-05 08:05) @done(18-10-05 10:52) @lasted(2h47m2s)
  ☐ Implement npm publish configuration for components @high
  ☐ Implement store redux monitor log @low
+ ☐ Implement code spliting practice @high 
 

@@ -4,10 +4,10 @@
  * @type {ReduxReducer}
  * @return {Object} Reducer Specification
 */
-import { ProfileAct } from './../actions';
+import { profileAct } from './../actions';
 
 const initialState = {    
-    showProfileInfo: false,
+    showInfo: false,
     info: ''
 };
 
@@ -22,7 +22,7 @@ const initialState = {
    */
 const profile = (state = initialState, action) => {
     switch (action.type) {
-        case ProfileAct.SHOW_PROFILE_INFO:
+        case profileAct.SHOW_PROFILE_INFO:
             return Object.assign({}, state, action);
         default:
             return state;
