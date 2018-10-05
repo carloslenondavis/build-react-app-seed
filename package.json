@@ -47,7 +47,6 @@
     "webpack-merge": "^4.1.4"
   },
   "dependencies": {
-    "npm": "^6.4.1",
     "prop-types": "^15.6.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
@@ -57,7 +56,8 @@
     "redux-thunk": "^2.3.0"
   },
   "engine": {
-    "node": ">=10.10.0",
-    "npm": ">=6.4.1"
+    "node": "~10.10.0",
+    "npm": "~6.4.1",
+    "yarn": "~1.10.1"
   }
 }
