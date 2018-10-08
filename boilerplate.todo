@@ -7,5 +7,4 @@
  ✔ Fix eslinter error message @critical @started(18-10-05 08:05) @done(18-10-05 10:52) @lasted(2h47m2s)
  ☐ Implement npm publish configuration for components @high
  ☐ Implement store redux monitor log @low
- ☐ Implement code spliting practice @high 
-
+ ☐ Implement code spliting practice @high

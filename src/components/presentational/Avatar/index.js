@@ -16,24 +16,19 @@ import PropTypes from 'prop-types';
 const Avatar = ({
   name = 'John Doe',
   photoUrl = '',
-  profEmail = '',
-  codeEmail = '',
   showInfo = false,
   info = '',
 }) => (
   <div className="app-avatar">
-    <img className="photo" src={photoUrl} alt="Profile Name" />
-    <h1 className="name">{name}</h1>
-    <p>
-      <span className="link">{profEmail}</span>
-      <span className="devider">&nbsp;/&nbsp;</span>
-      <span className="link">{codeEmail}</span>
-    </p>
+    <img className="photo" src={photoUrl} alt="Moi Name" />
     {showInfo && (
       <p className="info">
         <span className="quote">&ldquo;</span>
-        {info}
+        <span className="name link">{info}</span>
         <span className="quote">&rdquo;</span>
+        <span className="quote">&nbsp;-&nbsp;</span>
+        <span className="quote">{name}</span>
+        <span className="quote">&nbsp;-</span>
       </p>
     )}
   </div>
@@ -47,7 +42,6 @@ const Avatar = ({
  * @param {String} name         - Profile name
  * @param {String} photoUrl     - Profile url photo
  * @param {String} profEmail    - Profile profesional email
- * @param {String} codeEmail    - Profile code email
  * @param {Boolean} showInfo    - Show Profile info logan
  * @param {String} info         - Profile info logan
  * @return {Array} React PropTypes
@@ -55,8 +49,6 @@ const Avatar = ({
 Avatar.propTypes = {
   name: PropTypes.string.isRequired,
   photoUrl: PropTypes.string.isRequired,
-  profEmail: PropTypes.string.isRequired,
-  codeEmail: PropTypes.string.isRequired,
   showInfo: PropTypes.bool.isRequired,
   info: PropTypes.string.isRequired,
 };

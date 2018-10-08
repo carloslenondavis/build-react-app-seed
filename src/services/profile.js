@@ -16,7 +16,7 @@ import { profileAct } from '../common/actions';
  * @return {OBJECT} Store context
  */
 export const getInfo = () => (dispatch) => {
-  const infoText = 'Senior Frontend Developer, passionate entrepreneur, former and Javascript lover.';
+  const infoText = 'Make It Simple, But Significant';
   dispatch(profileAct.showProfileInfo(true, infoText));
 };
 
