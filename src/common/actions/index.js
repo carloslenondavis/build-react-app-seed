@@ -9,7 +9,4 @@
 import * as profileAct from './profile';
 import * as fooAct from './foo';
 
-export {
-    profileAct,
-    fooAct
-};
+export { profileAct, fooAct };

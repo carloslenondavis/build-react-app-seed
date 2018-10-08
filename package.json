@@ -7,14 +7,15 @@
     "start": "cross-env NODE_ENV=development webpack-dev-server --progress",
     "build": "cross-env NODE_ENV=production webpack",
     "test": "jest --config ./jest.config.json --forceExit --detectOpenHandles --env=jsdom",
-    "docs": "jsdoc --configure .jsdoc.json --verbose"
+    "docs": "jsdoc --configure .jsdoc.json --verbose",
+    "eslint": "eslint *.js"
   },
   "keywords": [
     "reactapp",
     "webpack"
   ],
   "author": "clenondavis <code@carloslenon.com>",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",

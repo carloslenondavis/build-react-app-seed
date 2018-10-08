@@ -7,16 +7,13 @@
  * @return {Object} List of store reducers
  */
 import { createStore, applyMiddleware } from 'redux';
-import appReducers from './../reducers';
 import thunk from 'redux-thunk';
+import appReducers from '../reducers';
 
-const store = createStore(
-    appReducers,
-    applyMiddleware(thunk)
-);
+const store = createStore(appReducers, applyMiddleware(thunk));
 
 store.subscribe(() => {
-    console.log("next state", store.getState());
+  console.log('next state', store.getState());
 });
 
 export default store;
