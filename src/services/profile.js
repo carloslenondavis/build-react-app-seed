@@ -20,7 +20,6 @@ export const getInfo = () => (dispatch) => {
   dispatch(profileAct.showProfileInfo(true, infoText));
 };
 
-
 /**
  * @function
  * @name foo
