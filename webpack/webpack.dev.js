@@ -1,8 +1,10 @@
+const path = require('path');
+
 module.exports = {
   mode: 'development',
   output: {
     filename: '[name].js',
-    path: __dirname + 'public',
+    path: path.resolve(__dirname, 'public'),
     chunkFilename: '[name].js',
   },
   module: {
