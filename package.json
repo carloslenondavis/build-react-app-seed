@@ -4,11 +4,11 @@
   "description": "buld webpack config for react app from scratch",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=development webpack-dev-server --progress",
+    "start": "npm run eslint && cross-env NODE_ENV=development webpack-dev-server --progress",
     "build": "cross-env NODE_ENV=production webpack",
     "test": "jest --config ./jest.config.json --forceExit --detectOpenHandles --env=jsdom",
     "docs": "jsdoc --configure .jsdoc.json --verbose",
-    "eslint": "eslint *.js"
+    "eslint": "eslint . --ext js"
   },
   "keywords": [
     "reactapp",
@@ -21,12 +21,13 @@
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
     "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.4",
     "clean-webpack-plugin": "^0.1.19",
     "cross-env": "^5.2.0",
     "css-loader": "^1.0.0",
     "docdash": "^1.0.0",
-    "eslint": "^5.6.1",
+    "eslint": "^5.9.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-loader": "^2.1.1",
     "eslint-plugin-import": "^2.14.0",
@@ -40,6 +41,7 @@
     "node-sass": "^4.9.3",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "path": "^0.12.7",
+    "prettier": "^1.15.2",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.0",
     "webpack": "^4.20.2",
@@ -51,7 +53,7 @@
     "prop-types": "^15.6.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "react-hot-loader": "^4.3.11",
+    "react-hot-loader": "^4.3.12",
     "react-redux": "^5.0.7",
     "redux": "^4.0.0",
     "redux-thunk": "^2.3.0"
