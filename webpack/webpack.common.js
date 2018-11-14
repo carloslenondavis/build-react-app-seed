@@ -7,7 +7,6 @@ const envIsProd = process.env.NODE_ENV === 'production' && true;
 module.exports = {
   entry: {
     app: path.resolve(__dirname, './../src/index.js'),
-    publicPath: '/',
   },
   module: {
     rules: [
@@ -45,7 +44,7 @@ module.exports = {
       warnings: false,
       errors: true,
     },
-    port: 7000,
+    port: 7771,
     stats: 'errors-only',
     historyApiFallback: true,
   },

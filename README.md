@@ -3,7 +3,7 @@
 # Boilerplate for react based on babel, webpack, redux, jest, jsdoc and hotreload
 This project include scaffolding, test, doc code, style  configuration to use in any case
 
-**It is not based on create-react-app**
+> It is not based on create-react-app
 
 ## Setup
 These are the instructions to setup this boilerplate. You can add your own configurations and stuff for your own purpose.
@@ -33,8 +33,38 @@ npm i
 ```
 
 ## Test
-
 This include jest as main test environment. 
+
+## Branches
+The branches alignment will be based on gitflow naming. Before you create a branch be sure the pull the latest change from `dev` branch.
+
+**For any attemp changes to this repo, please use `PR (Pull Request)` as your request change.**
+
+### development environment
+For any development please checkout `dev` branch. Do not work on `master` branch.
+
+### Branches schema naming
+In this section you will see the naming schema for:
+* feature/
+* bugfix/
+* hotfix/
+* spike/
+
+> Create any branches schema from `dev` branch.
+> Use `-` as your word devider
+> Use `lowercase` format in the branching naming
+
+#### Feature/
+The naming to use in order to create a feature branch is `feature/short-title-of-the-feature`
+
+#### Bugfix/
+The bugfix exist beside dev branch. The naming to use in order to create a feature branch is `bugfix/short-title-of-the-bugfix`
+
+#### hotfix/
+The bugfix exist beside master branch. The naming to use in order to create a feature branch is `bugfix/short-title-of-the-bugfix`
+
+#### spike/
+This branch will allow any proposal feature or lib. The naming to use in order to create a feature branch is `spike/short-title-of-the-spike-proposal`
 
 ## Code Documentation
 This include jsDoc as main code documentator environment. 
