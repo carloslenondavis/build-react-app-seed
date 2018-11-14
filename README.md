@@ -15,6 +15,8 @@ These are the instructions to setup this boilerplate. You can add your own confi
 * Install your favorite editor, in this time i'm used [VSCode ^1.27.2](https://code.visualstudio.com/)
 * Install [Nodejs](https://nodejs.org/es/)
 * Install [GIT](https://git-scm.com/)
+* Configure Code Formatter. Read airbnb eslint format rules
+* Install vscode prettier plugin in roder to align your editor with the airbnb eslint rules
 ```
 
 ### Installation
