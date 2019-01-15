@@ -9,6 +9,16 @@
         color: $base-color-fourth;
     }
 
+    .photo {
+        width: 100px;
+        border-radius: 100%;
+    }
+
+    .link {
+        color: $base-color-fourth;
+        font-size: 0.8em;    
+    }
+
     .devider {
         font-size: 1.1em;
         font-weight: bold;

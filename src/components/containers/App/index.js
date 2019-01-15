@@ -40,10 +40,11 @@ class App extends React.Component {
    * @return {JSX} Components for App
    */
   render() {
-    const profileName = 'Don Draper';
-    const photoUrl = 'https://plainjs.com/static/img/logo_640.png';
+    const profileName = 'Carlos Lenon';
+    const photoUrl = 'https://avatars0.githubusercontent.com/u/4239218?s=400&u=f2778b9e2ca31ad43ff98c632f2e22e15ab46784&v=4';
     const emails = {
       prof: 'dev@carloslenon.com',
+      code: 'code@carloslenon.com',
     };
     const { showProfileInfo, profileInfo } = this.props;
 
