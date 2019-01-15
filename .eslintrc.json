@@ -21,7 +21,8 @@
 				"devDependencies": true
 			}
 		],
-		"react/forbid-prop-types": [false]
+		"react/forbid-prop-types": [false],
+		"no-underscore-dangle": "off"
 	},
 	"parser": "babel-eslint"
 }
