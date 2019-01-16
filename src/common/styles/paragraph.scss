@@ -1,0 +1,18 @@
+.app-paragraph {
+    text-align: center;    
+    
+    .link {
+        color: $base-color-fourth;
+        font-size: 0.8em;    
+    }
+
+    .info {
+        color: $base-color-fifth;
+        font-size: 0.9em;
+
+        .quote {
+            color: $base-color-sixth;
+            font-size: 1.4em;
+        }
+    }
+}

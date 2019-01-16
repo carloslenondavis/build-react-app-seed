@@ -15,7 +15,7 @@ import { connect } from 'react-redux';
  * <Avatar name={profileName} photoUrl={photoUrl} profEmail={emails.prof} codeEmail={emails.code} />
  */
 const Social = ({ profileInfo }) => (
-  <div className="app-avatar">
+  <div className="app-paragraph">
     <p className="info">
       <span className="quote">&ldquo;</span>
       <span className="name link">{profileInfo}</span>

@@ -8,4 +8,4 @@
  ☐ Implement npm publish configuration for components @high
  ✔ Implement store redux monitor log @low @done(19-01-15 15:52)
  ☐ Implement code spliting practice @high
- ☐ Add react router dom as the router controller @started(19-01-15 22:12)
+ ✔ Add react router dom as the router controller @started(19-01-15 22:12) @done(19-01-16 16:50) @lasted(18h38m32s)
