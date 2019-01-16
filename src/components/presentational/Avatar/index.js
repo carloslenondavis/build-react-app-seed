@@ -1,6 +1,10 @@
 // #region load dependencies
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+// #endregion
+// #region constant
+import appRouter from '../../../common/constant/routerView/app';
 // #endregion
 
 /**
@@ -14,12 +18,7 @@ import PropTypes from 'prop-types';
  * <Avatar name={profileName} photoUrl={photoUrl} profEmail={emails.prof} codeEmail={emails.code} />
  */
 const Avatar = ({
-  name = 'John Doe',
-  photoUrl = '',
-  profEmail = '',
-  codeEmail = '',
-  showInfo = false,
-  info = '',
+  name = 'John Doe', photoUrl = '', profEmail = '', codeEmail = '',
 }) => (
   <div className="app-avatar">
     <img className="photo" src={photoUrl} alt="Profile Name" />
@@ -29,16 +28,7 @@ const Avatar = ({
       <span className="devider">&nbsp;/&nbsp;</span>
       <span className="link">{codeEmail}</span>
     </p>
-    {showInfo && (
-      <p className="info">
-        <span className="quote">&ldquo;</span>
-        <span className="name link">{info}</span>
-        <span className="quote">&rdquo;</span>
-        <span className="quote">&nbsp;-&nbsp;</span>
-        <span className="quote">{name}</span>
-        <span className="quote">&nbsp;-</span>
-      </p>
-    )}
+    <p><Link className="link" to={appRouter.paragraph.info}>See more detail</Link></p>
   </div>
 );
 
@@ -61,8 +51,6 @@ Avatar.propTypes = {
   photoUrl: PropTypes.string.isRequired,
   profEmail: PropTypes.string.isRequired,
   codeEmail: PropTypes.string.isRequired,
-  showInfo: PropTypes.bool.isRequired,
-  info: PropTypes.string.isRequired,
 };
 
 export default Avatar;

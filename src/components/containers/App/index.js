@@ -2,11 +2,15 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { hot } from 'react-hot-loader';
+import { Switch, Route, withRouter } from 'react-router-dom';
 // #endregion
 // #region load components
 import Avatar from '../../presentational/Avatar';
+import Paragraph from '../../presentational/Paragraph';
 import { getInfo } from '../../../services/profile';
+// #endregion
+// #region constant
+import appRouter from '../../../common/constant/routerView/app';
 // #endregion
 
 /**
@@ -46,17 +50,21 @@ class App extends React.Component {
       prof: 'dev@carloslenon.com',
       code: 'code@carloslenon.com',
     };
-    const { showProfileInfo, profileInfo } = this.props;
+    const { paragraph: { info } } = appRouter;
+    // const { children } = this.props;
 
     return (
-      <Avatar
-        name={profileName}
-        photoUrl={photoUrl}
-        profEmail={emails.prof}
-        codeEmail={emails.code}
-        showInfo={showProfileInfo}
-        info={profileInfo}
-      />
+      <>
+        <Avatar
+          name={profileName}
+          photoUrl={photoUrl}
+          profEmail={emails.prof}
+          codeEmail={emails.code}
+        />
+        <Switch>
+          <Route path={info} component={Paragraph} />
+        </Switch>
+      </>
     );
   }
 }
@@ -75,15 +83,13 @@ const mapStateToProps = state => ({
 });
 
 App.propTypes = {
-  showProfileInfo: PropTypes.bool,
-  profileInfo: PropTypes.string,
   dispatch: PropTypes.func,
+  // children: PropTypes.node,
 };
 
 App.defaultProps = {
-  showProfileInfo: false,
-  profileInfo: '',
   dispatch: '',
+  // children: [],
 };
 
-export default hot(module)(connect(mapStateToProps)(App));
+export default withRouter(connect(mapStateToProps)(App));
